@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 700px;
+	background: #fff;
+	width: 600px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	border-radius: 15px;
+}
+
+.container .text{
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+form p{
+	color: #9f01ea;
+}
+
+label{
+	margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-row label{
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+input[type=text], input[type=email], input[type=date], select{
+	font-size: 16px;
+	width: 100%;
+	height: 36px;
+	padding-left: 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+input[type=submit]{
+	font-weight: 600;
+	color: #fff;
+	font-size: 20px;
+	width: 70%;
+	height: 50px;
+	border: none;
+	border-radius: 30px;
+	background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+	margin: auto;
+}
+
+
+@media (max-width: 400px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+}

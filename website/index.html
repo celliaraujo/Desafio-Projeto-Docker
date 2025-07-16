@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Candidato</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		
+		<form id="formulario" action="#">
+			<div class="text">Cadastro de Usuário</div>
+			<label for="nome"><p>Nome:</p>
+				<input type="text" id="nome" name="nome" minlength="15" maxlength="50" required>
+			</label>
+			
+			<label for="email"><p>E-mail:</p>
+				<input type="email" name="email" placeholder="exemplo@email.com" minlength="10" required>
+			</label>
+			
+			<label for="dn"><p>Data de nascimento:</p>
+				<input class="data-nascimento" type="date" id="dn" name="dn" min="1910-01-01" max="2020-12-31" required>
+			</label>
+			
+			<p>Sexo:</p>
+			<div class="form-row">
+				<label for="feminino">
+					<input type="radio" id="feminino" name="sexo" value="feminino" required> Feminino
+				</label>
+				<label for="feminino">
+					<input type="radio" id="masculino" name="sexo" value="masculino"> Masculino
+				</label>
+			</div>
+			
+			<label for="ec"><p>Estado Civil:</p>
+				<select class="estado-civil" name="ec" id="ec" required>
+					<option value="casado">Casado(a)</option>
+					<option value="solteiro">Solteiro(a)</option>
+					<option value="outros">Outros</option>
+				</select>
+			</label>
+			
+			<p>Áreas de Interesse:</p>
+			<div class="form-row">
+				<label for="analise">
+					<input type="checkbox" name="area" value="analise"> Análise
+				</label>		
+				<label for="bd">
+					<input type="checkbox" name="area" value="bd"> Banco de dados
+				</label>
+				<label for="desenvolvimento">
+					<input type="checkbox" name="area" value="desenvolvimento"> Desenvolvimento
+				</label>
+				<label for="engenharia">
+					<input type="checkbox" name="area" value="engenharia"> Engenharia de software
+				</label>
+				<label for="redes">
+					<input type="checkbox" name="area" value="redes"> Redes de computadores
+				</label>
+			</div>
+			
+			
+			<input id="enviar" type="submit" value="Enviar"></td>
+		
+		</form>
+	</div>
+	<script src="script.js" defer></script>
+	
+</body>
+
+</html>
